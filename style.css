@@ -117,7 +117,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: relative; */
+  position: relative;
   z-index: 1;
 }
 .hero-content {
@@ -200,6 +200,7 @@ body {
 }
 .services-section {
   padding: 5rem;
+  margin-top: 100px
 }
 .service-card {
   position: relative;
@@ -870,6 +871,14 @@ textarea {
 }
 
 /* Responsive Design */
+@media (max-width: 900px) {
+  .services-section {
+    margin-top: 200px
+  }
+  .book-form{
+    top: calc(100% - 250px);
+  }
+}
 @media (max-width: 1024px) {
   .services-header {
     flex-direction: column;
@@ -1175,4 +1184,149 @@ textarea {
   .btn {
     padding: 10px 20px;
   }
+}
+
+
+/* =============================================== */
+.book-form form label{
+  float: left;
+  display: flex;
+  flex-grow: 1;
+  background-color: #f4f6f8;
+  padding: 15px;
+  align-items: center;
+}
+.book-form form .submit-btn {
+  flex-grow: 1;
+  background-color: #e81932;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 8px;
+}
+.book-form .head{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.book-form label .left {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.book-form label .left select, label .left input{
+  padding: 0px;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.book-form form{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.book-form{
+  z-index: 99;
+  background-color: #fff;
+  padding-inline: 1.625rem;
+  padding-block: 1.875rem 1.25rem;
+  box-shadow: 0 .375rem .375rem rgba(0, 0, 0, .12);
+  border-radius: 0 .188rem .188rem;
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  top: calc(100% - 150px);
+  left: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.book-form select, .book-form label .left input{
+  color: #a7a3a3;
+}
+
+@media only screen and (max-width: 900px) {
+  .book-form label, .book-form form .submit-btn{
+      width: 50%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .book-form .get-ticket{
+      width: 100%;
+  }
+}
+.book-form .tabs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.book-form .tabs label{
+  width: fit-content;
+  background-color: transparent;
+  margin-right: 10px;
+}
+.book-form .tabs input {
+  margin-right: 5px;
+  display: inline !important;
+}
+
+
+/* FLIGHT */
+.flight{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+}
+.flight > div{
+  padding: 10px;
+}
+.item{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.item .icon{
+  width: 50px;
+  height: 50px;
+  background-color: #e81932;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+}
+
+.get-ticket{
+  background-color: #e81932;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+.searchResult{
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+.searchResult h2{
+  font-size: 40px;
+  color: #850312;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
 }
