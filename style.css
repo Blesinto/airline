@@ -5,10 +5,15 @@
   font-family: "Inter", Arial, sans-serif;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f8f9fa;
   color: #333;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Navbar Styles */
