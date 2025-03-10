@@ -105,7 +105,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   /* background: linear-gradient(to right, white 30%, #1a2a47 100%); */
-  background-image: url(./assest/background-image.jpg);
+  background-image: url("https://www.turkishairlines.com/_next/image?url=https%3A%2F%2Fwww.turkishairlines.com%2Fapi%2Fv1%2Fcms%2Fbackground-image%2Fraw%3Flanguage%3Den%26country%3Dint&w=1920&q=75");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -116,13 +116,14 @@ body {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
+  /* position: relative; */
   z-index: 1;
 }
 .hero-content {
-  width: 50%;
-  padding-right: 20px;
+  width: 100%;
+  text-align: center;
+  /* padding-right: 20px; */
 }
 
 .hero-title {
@@ -141,11 +142,14 @@ body {
 .hero-description {
   font-size: 1rem;
   color: #fff;
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .hero-buttons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
 }
 
@@ -237,7 +241,7 @@ body {
 .services-header {
   display: flex;
   align-items: center;
-  margin: 2rem 0 0 2rem 0;
+  margin: 7rem 0 3rem 0rem;
   justify-content: space-between;
 }
 
@@ -357,7 +361,7 @@ h1 {
 }
 
 .accent-text {
-  color: #e74c3c;
+  color: #e81932;
 }
 
 .subtitle {
@@ -419,7 +423,7 @@ h1 {
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: #e74c3c;
+  background-color: #e81932;
   color: white;
   display: flex;
   justify-content: center;
@@ -447,12 +451,6 @@ h2 {
   background: linear-gradient(180deg, #e8f9f9 0%, #f5fcfc 100%);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -460,7 +458,7 @@ h2 {
 
 .section-header h2 {
   font-size: 42px;
-  color: #333;
+  color: #e81932;
   margin-bottom: 20px;
 }
 
@@ -482,7 +480,7 @@ h2 {
 
 .contact-info {
   flex: 0 0 35%;
-  background: #00ada7;
+  background: #e81932;
   color: white;
   padding: 40px;
   display: flex;
@@ -578,24 +576,23 @@ textarea {
 }
 
 .submit-btn {
-  background: #00ada7;
+  background: #e81932;
   color: white;
   border: none;
   padding: 12px 30px;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s;
 }
 
 .submit-btn:hover {
-  background: #008f8a;
+  background: #e81932;
 }
 
 /* TEestimonial section  */
 
 .testimonial-section {
-  padding: 40px 20px;
+  padding: 7rem 0 7rem 0;
   width: 100%;
 }
 
@@ -676,14 +673,14 @@ textarea {
 .testimonial-image {
   flex: 1;
   min-height: 400px;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 /* Get started  */
 .cta-section {
   width: 100%;
-  background-color: #0074e4;
+  background-color: #e81932;
   color: white;
   padding: 60px 20px;
 }
@@ -698,6 +695,7 @@ textarea {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.3;
+  color: #fff;
   margin-bottom: 20px;
 }
 
@@ -711,7 +709,7 @@ textarea {
 .cta-button {
   display: inline-block;
   background-color: white;
-  color: #0074e4;
+  color: #e81932;
   text-decoration: none;
   padding: 12px 30px;
   font-size: 16px;
@@ -755,6 +753,7 @@ textarea {
 .footer-logo-col {
   flex: 1;
   min-width: 250px;
+  line-height: 1.6;
   margin-right: 40px;
   margin-bottom: 30px;
 }
@@ -789,19 +788,19 @@ textarea {
   color: #666;
   font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin: 20px 0 15px 0;
   max-width: 300px;
 }
 
 .footer-email {
   display: flex;
-  align-items: center;
+
   color: #666;
   font-size: 14px;
 }
 
 .footer-email i {
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
 
 .footer-links-container {
@@ -817,7 +816,7 @@ textarea {
 }
 
 .footer-links-col h3 {
-  color: #0066ff;
+  color: #e81932;
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 600;
